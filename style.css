@@ -1,0 +1,155 @@
+/* Mobile First */
+/* Main Styles */
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, p{
+  margin: 0;
+  padding: 1em 0;
+}
+.btn{
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: .7em 2em;
+  border: 1px solid #666;
+  margin: .2em 0;
+}
+.btn:hover{
+  background: #eaeaea;
+  color: #333;
+}
+
+/*  Header Showcase */
+
+#showcase{
+  min-height: 450px;
+  color: #fff;
+  text-align: center;
+}
+#showcase .bg-image{
+  position: absolute;
+  background: #333 url('https://images.unsplash.com/photo-1443884590026-2e4d21aee71c?auto=format&fit=crop&w=1454&q=80');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.45;
+}
+#showcase h1{
+  padding: 125px 0 0 0;
+}
+#showcase .content-wrap,
+#section-a .content-wrap{
+  padding: 0 1.5em;
+}
+
+/* Section a */
+#section-a{
+  background: #eaeaea;
+  color: #333;
+  padding-bottom: 2em;
+}
+
+/*Section b  */
+#section-b{
+  padding: 2em 1em 1em;
+}
+#section-b ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#section-b li{
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+}
+#section-b img{
+  min-height: 182px;
+}
+.card-content{
+  padding: 1.5em;
+}
+
+/* Section c */
+#section-c {
+  background: #fff;
+  color: #333;
+  padding: 2em;
+}
+
+/* Section d */
+#section-d .box{
+  padding: 2em;
+  color: #fff;
+}
+#section-d .box:first-child{
+  background: #2690d4;
+}
+
+/* Footer */
+#main-footer{
+  padding: 2em;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+#main-footer a{
+  color: #2690d4;
+  text-decoration: none;
+}
+
+/* Media Queries */
+
+@media (min-width: 735px) {
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+
+  #section-a .content-text{
+    columns: 2;
+    column-gap: 2em;
+  }
+
+  #section-a .content-text p{
+    padding-top: 0;
+  }
+
+  .content-wrap,
+  #section-b ul{
+    grid-column: 2/4;
+  }
+
+  .box{
+    grid-column: span 2;
+  }
+  #main-footer div{
+    grid-column: span 2;
+  }
+}
+
+#section-b ul{
+  display: flex;
+  justify-content: space-around;
+}
+#section-b li{
+  width: 31%;
+}
