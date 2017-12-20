@@ -121,7 +121,7 @@ h1, h2, h3, p{
 @media (min-width: 735px) {
   .grid{
     display: grid;
-    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    grid-template-columns: 1fr repeat(4, minmax(auto, 25em)) 1fr;
   }
 
   #section-a .content-text{
@@ -135,21 +135,20 @@ h1, h2, h3, p{
 
   .content-wrap,
   #section-b ul{
-    grid-column: 2/4;
+    grid-column: 2/6;
   }
 
   .box{
-    grid-column: span 2;
+    grid-column: span 3;
   }
   #main-footer div{
     grid-column: span 2;
   }
-}
-
-#section-b ul{
-  display: flex;
-  justify-content: space-around;
-}
-#section-b li{
-  width: 31%;
+  #section-b ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  #section-b li{
+    width: 31%;
+  }
 }
