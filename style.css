@@ -103,6 +103,9 @@ h1, h2, h3, p{
 #section-d .box:first-child{
   background: #2690d4;
 }
+#section-d .btn{
+  border: none;
+}
 
 /* Footer */
 #main-footer{
